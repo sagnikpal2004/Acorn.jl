@@ -5,13 +5,13 @@ module EditorConfig
 ## Parameter ##
 ###############
 
-type Parameter{T}
+struct Parameter{T}
     value::T
-    validate::Union{Function, Void}
+    validate::Union{Function, Nothing}
     desc::String # Used when calling help <param name>
 end
 
-validate(p::Parameter) = p.validate == nothing ? true : p.validate(p.value)
+validate(p::Parameter) = isnothing(p.validate) ? true : p.validate(p.value)
 
 function set(p::Parameter, x)
     old_val = p.value
