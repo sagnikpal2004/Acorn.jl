@@ -3,3 +3,4 @@
 *.jl.*.cov
 *.jl.mem
 README.html
+Manifest.toml

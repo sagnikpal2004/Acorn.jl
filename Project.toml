@@ -1,0 +1,10 @@
+name = "Acorn"
+uuid = "a6d6d3a2-7682-4b5d-9535-f683d99c3d23"
+version = "0.1.0"
+
+[deps]
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+REPL = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
+
+[compat]
+REPL = "1.11.0"
